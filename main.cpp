@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
     ros::NodeHandle nh;
     RosNode rosnode;
     rosnode.runRosNode(nh);
-
+    ros::spin();
 
     QQmlApplicationEngine engine;
     const QUrl url(QStringLiteral("qrc:/main.qml"));
